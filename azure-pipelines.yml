@@ -53,7 +53,7 @@ echo "no" | $ANDROID_HOME/tools/bin/avdmanager: create avd -n xamarin_android_em
 
 $ANDROID_HOME/emulator/emulator: -list-avds
 
-echo "Starting emulator":
+echo "Starting emulator"
 
 # Start emulator in background
 nohup $ANDROID_HOME/emulator/emulator: -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
@@ -61,4 +61,4 @@ $ANDROID_HOME/platform-tools/adb: wait-for-device shell 'while [[ -z $(getprop s
 
 $ANDROID_HOME/platform-tools/adb: devices
 
-echo "Emulator started":
+echo "Emulator started"
